@@ -1,0 +1,18 @@
+What is Websocket?
+Socket.io is a library for websocket that enables bidirectional, and event based communication between client and server
+
+Difference b/w http and websocket
+
+http main client request kerta h toh server data sent kerta h aur ye one way communication h server without request k data sent nai ker skta aur websocket main aik bar connection build ho jai client k sath phir chahy client request kery ya na kery server usko data sent ker skta h like notification waghera ya kuch aur.
+
+websocket main event hoty h like mainay aik message ka event banaya aur phir ispy aik function banaya jo koi message sent ker rha h client side py toh client side py is message ko get kernay k liye us event ko listen keroonga 
+
+
+Difference b/w Socket and IO?
+IO mean mainay aik square banaya usko circuit bolty h aur usko main io bolonga  aur is circuit k ander bahot saray socket hongy matlb client mtlb users Ager main io.emit keroonga toh ye saray users ko select kery ga aur emit aik method h jiske ander hum event ka name add kerty h like messages aur 2nd orgument main koi bhi message ager sent kerna ho toh aur ager kisi specific user ko select kerna ho toh phir socket.emit ka use ker ty h  
+
+io.emit() for sending data to all user          socket.emit for sending data to individual user     on() will add the event name in that and we will get data
+socket.broadcost.emit ye kernay sy jo message ker rha hu usko message receive nai hoga aur doosray user ko receive hoga
+socket.to().emit() Ager kisi bandy sy personal chat kerni ho like one on by toh ye to() method ka use kerty us is main socket ki id pass kerni hoti h jis sy chat kerni ho
+
+
